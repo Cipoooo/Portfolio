@@ -1,0 +1,129 @@
+.Header{
+    margin-top: 150px;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+} 
+.HeaderColumn{
+    max-height: 600px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.HeaderColumn .saluto{
+    font-size: 2.2rem;
+    font-family: 'Roboto';
+    text-align: center;
+}
+.HeaderColumn .nome{
+    font-size: 5rem;
+    font-family: 'Merriweather';
+    font-weight: 700;
+    text-align: center;
+}
+.HeaderColumn .colore{
+    font-size: 5rem;
+    color: var(--accent) ;
+    font-weight: 800;
+    font-family: 'Merriweather';
+}
+.HeaderColumn .colore2{
+    font-size: 2.5rem;
+    color: var(--accent) ;
+    font-weight: 800;
+    font-family: 'Merriweather';
+    text-align: left;
+}
+.HeaderColumn .lavoro{
+    font-family: 2.5rem;
+    padding-top: 20px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    text-align: left;
+}
+.HeaderColumnR{
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+    background-color: var(--accent);
+    padding: 50px;
+}
+.HeaderColumnR .ProfileImageContainer1{
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    background-color: var(--text);
+}
+.HeaderColumnR .ProfileImageContainer1 .ProfileImageContainer2{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    padding: 50px;
+}
+.HeaderColumnR .ProfileImageContainer1 .ProfileImageContainer2 .ProfileImage{
+    height: 380px;
+    width: 380px;
+    border-radius: 50%;
+    background-image: url("../../assets/mm.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100%;
+
+    background-color: var(--background);
+}
+.RandomCircles{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 15%;
+    left: 78%;
+    background-color: var(--accent);
+}
+.ButtonsContainer{
+    width: 100%;
+    min-height: 50px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+.LearnMore,.Contact{
+    background-color: var(--accent);
+    color: var(--text);
+    font-weight: 700;
+    transition: all 0.75s ease-in-out ;
+}
+.LearnMore:hover,.Contact:hover{
+    border-radius: 25px;
+    box-shadow: 5px 2px 10px var(--text);
+    background-color: var(--background);
+    transition: all 0.5s ease-in-out ;
+}
+#Arrow{
+    color: var(--text);
+}
+@keyframes slideInLeft{
+    from{
+        transform: translateX(-500px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+@keyframes bounce{
+    0%,20%,50%,80%,100%{
+        transform: translateY(0%);
+    }
+    40%{
+        transform: translateY(-30px);
+    }
+    60%{
+        transform: translateY(-15px);
+    }
+}

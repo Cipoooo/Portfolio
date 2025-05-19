@@ -1,0 +1,48 @@
+.Nav{
+    background-color: transparent;
+    color: var(--text);
+    position: sticky top;
+    padding-top: 20px;
+    transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+}
+.NavScrolled{
+    padding-top: 20px;
+    background-color: var(--accent);
+    border-bottom: solid 3px var(--text);
+    position: sticky top;
+    transition: 0.5s ease-in-out;
+}
+/*button{
+    background-color: var(--background);
+    color: var(--text);
+    transition: background-color .25s ease, color .25s ease-in;
+}
+button:hover{
+    background-color: var(--text);
+    color: var(--background);
+    transform: all 1.5s ease-in-out;
+}*/
+span{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--secondary);
+}
+p{
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--text);
+}
+.NavLinks{
+    font-size: 1.2rem;
+    color: var(--text);
+    text-decoration: none;
+}
+.NavLinks:hover{
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+.modeSwitcher{
+    width: 100px;
+    background-color: transparent;
+    outline-color: transparent;
+}
