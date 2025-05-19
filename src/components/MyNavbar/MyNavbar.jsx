@@ -44,6 +44,10 @@ const MyNavbar = () =>{
                 {isOn == true?<i className="bi bi-sun-fil text-white fs-2"></i>: <i className="bi bi-moon text-white fs-3 w-100" onClick={() =>{setIsOn==false}}></i>}
               </button>*/}
             </div>
+             <div className="NavLinkContainer d-flex">
+              <Link className="NavLinks my-0 py-0 ms-4" to={"/"}>Home</Link>
+              <Link className="NavLinks my-0 py-0 ms-3" to={"/About"}>About me </Link>
+            </div>
           </div>
       </Navbar>
         </>

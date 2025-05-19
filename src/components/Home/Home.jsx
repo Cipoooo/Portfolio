@@ -2,6 +2,7 @@
 import { useState,useEffect } from "react";
 import { Container } from "react-bootstrap";
 import "../Home/Home.css";
+import { Link } from "react-router-dom";
 
 const arraySaluti = [
   "Ciao",
@@ -44,11 +45,15 @@ const Home = () =>{
         <Container fluid className="Header p-0">
             <div className="HeaderColumn">
               <h3 className="saluto my-0">{saluto}, This is</h3>
-              <h1 className="nome my-0"><span className="colore">Gabr</span>iele<span className="colore">Cipo</span>lloni</h1>
-              <h2 className="lavoro my-0">A Junior <span className="colore2">Full-Stack</span> Web Developer from Rome</h2>
+              <div className="d-flex">
+                <h1 className="nome my-0"><span className="colore">Gabr</span>iele<span className="colore"> Cipo</span>lloni</h1>
+              </div>
+              <hr />
+              <h2 className="lavoro my-0">A Junior <span className="colore2">Full-Stack</span> Web Developer</h2>
               <div className="ButtonsContainer">
-                <button className="LearnMore px-4 fw-semi-bold py-2 fs-4 ">Learn More <i id="Arrow" className="bi bi-chevron-double-right"></i> </button>
-                <button className="Contact   px-4 fw-semi-bold py-2 fs-4 mx-4">Contact Me</button>
+               <Link to={"/About"}><button className="LearnMore px-4 fw-semi-bold py-2 fs-4 ms ">Learn More</button></Link> 
+                              <Link to={"/Projects"}><button className="LearnMore   px-4 fw-semi-bold py-2 fs-4 ms-4">My Projects</button></Link>
+               <Link to={"/Contacts"}><button className="LearnMore  px-4 fw-semi-bold py-2 fs-4 ms-4">Contact Me</button></Link>
               </div>
             </div>
             <div className="HeaderColumnR ">

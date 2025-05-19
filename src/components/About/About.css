@@ -1,0 +1,44 @@
+.About{
+    width: 100%;
+    min-height: 500px;
+    margin-top: 50px;
+}
+.ColImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--text);
+}
+.ColImage .ImageContainer{
+    width: 90%;
+    height: 80%;
+    border-radius: 10px;
+}
+.ColDescription{
+    display: flex;
+    align-items: start;
+}
+.educationIcon{
+    color: var(--accent);
+    font-size: 2.5rem;
+    font-weight: 700;
+    transition: all 0.75s ease;
+}
+.tech-stackIcon{
+    color: var(--accent);
+    font-size: 2.5rem;
+    font-weight: 700;
+    transition: all 0.75s ease;
+}
+.hobbiesIcon{
+    color: var(--accent);
+    font-size: 2.5rem;
+    font-weight: 700;
+    transition: all 0.75s ease;
+}
+.educationSpan{
+    color: var(--accent);
+    font-size: 1.8rem;
+    font-weight: 700;
+    transition: all 0.75s ease;
+}

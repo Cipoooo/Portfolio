@@ -2,8 +2,7 @@
 --text: #010B13;
 --background: #FEFFFE;
 --accent: #8AB9F1;
-  width: 100vw;
-  height: 100vh;
+
 }
 /*:root-dark{
 --text: #d9dcd6;
@@ -23,8 +22,6 @@
  cursor: pointer;
 }
 body{
-  width: 100vw;
-  height: 100vh;
   font-family: 'Inter';
   background-color: var(--background);
 }
